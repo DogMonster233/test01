@@ -1,0 +1,247 @@
+﻿/*luojie*/
+
+@charset "utf-8";
+body,
+html {
+	height: 100%;
+	background-color: #000;
+}
+
+a {
+	display: none;
+}
+
+.music_p {
+	background: url(../img/musicOpen.png) no-repeat center 100%/100%;
+	width: 0.6rem;
+	height: 0.6rem;
+	position: absolute;
+	top: 0.32rem;
+	right: 0.4rem;
+	z-index: 9999;
+}
+
+.swiper-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	background: url(../img/p2_bg.png) no-repeat center center/100% 100%;
+}
+
+
+/*修改按钮*/
+
+.swiper_btn_next {
+	position: absolute;
+	top: 94.61%;
+	right: 0.35rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	z-index: 99;
+	opacity: 1;
+	background: url(../img/btn_up.png) no-repeat center center/100% 100%; 100%;
+}
+
+.pic {
+	position: absolute;
+	top: 84.66%;
+	right: 0.69rem;
+	width: 1.6rem;
+}
+
+/*.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+	opacity: 0;
+}
+
+.swiper_btn_prev {
+	position: absolute;
+	top: 11.18rem;
+	right: 0.92rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	z-index: 99;
+	opacity: 1;
+	background: url(../img/btn_up.png) no-repeat center center/100% 100%;
+}*/
+
+
+/*cover*/
+
+
+/*page_01*/
+
+.cover {
+	background: url(../img/c_bg.png) no-repeat center center/100% 100%;
+}
+
+.logo {
+	position: absolute;
+	top: 0.26rem;
+	left: 0.32rem;
+	width: 4.73rem;
+	height: 0.54rem;
+}
+
+.cover .c_txt01 {
+	position: absolute;
+	top: 9.62%;
+	right: 0.71rem;
+	width: 0.97rem;
+	height: 2.36rem;
+}
+
+.cover .c_txt02 {
+	position: absolute;
+	top: 36%;
+	right: 0.715rem;
+	width: 3.38rem;
+	height: 1.44rem;
+}
+/*
+.cover .btn_up {
+	position: absolute;
+	top: 11.18rem;
+	right: 0.92rem;
+	width: 0.3rem;
+	height: 0.3rem;
+}*/
+
+
+/*page_01*/
+
+.page_01 {
+	background: url(../img/p1_bg.png) no-repeat center center/100% 100%;
+}
+
+.page_01 .p1_txt01 {
+	position: absolute;
+	top: 15.26%;
+	left: 0.805rem;
+	width: 5.89rem;
+	height: 3.75rem;
+}
+
+.page_01 .p1_txt02 {
+	position: absolute;
+	top: 54.15%;
+	left: 1.955rem;
+	width: 3.59rem;
+	height: 3.25rem;
+}
+
+
+/*page_02*/
+
+.page_02 {
+	background: url(../img/p2_bg.png) no-repeat center center/100% 100%;
+}
+
+.page_02 .p2_txt01 {
+	position: absolute;
+	top: 17.66%;
+	left: 2.925rem;
+	width: 1.65rem;
+	height: 0.78rem;
+}
+
+.page_02 .p2_txt02 {
+	position: absolute;
+	top: 29.68%;
+	left: 1.44rem;
+	width: 4.62rem;
+	height: 5.68rem;
+}
+
+
+/*page_03*/
+
+.page_03 {
+	background: url(../img/p3_bg.png) no-repeat center center/100% 100%;
+}
+
+.page_03 .p3_txt01 {
+	position: absolute;
+	top: 81.01%;
+	left: 2.245rem;
+	width: 3.01rem;
+	height: 0.18rem;
+}
+
+.page_03 .input_area {
+	position: absolute;
+	top: 15.17%;
+	left: 1.66rem;
+	width: 4.18rem;
+	height: 5.94rem;
+}
+
+.page_03 .p3_inputBg {
+	width: 4.18rem;
+	height: 5.94rem;
+}
+
+.page_03 .input_area .input_content {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.page_03 .input_content input {
+	position: absolute;
+	right: 0;
+	width: 4.18rem;
+	height: 0.59rem;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 0.26rem;
+}
+
+.page_03 .input_content input::-webkit-input-placeholder {
+	color: #f2f2f2;
+	font-size: 0.26rem;
+	text-align: center;
+}
+
+.page_03 .input_content .username {
+	top: 1.1rem;
+}
+
+.page_03 .input_content .usertel {
+	top: 3.27rem;
+}
+
+.page_03 .input_content .people_num {
+	top: 5.34rem;
+}
+
+.page_03 .p3_btn {
+	position: absolute;
+	top: 71.06%;
+	left: 2.66rem;
+	width: 2.18rem;
+	height: 0.57rem;
+}
+
+
+/* fade */
+
+.fadeIn1 {
+	-webkit-animation: fadeIn1 1.5s ease both infinite;
+	animation: fadeIn1 1.5s ease both infinite;
+}
+
+
+/* fade */
+
+@-webkit-keyframes fadeIn1 {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
