@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>以心致谢,一路相伴</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/rem.js"></script>
+		<link rel="stylesheet" href="css/config.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+
+		<div class="swiper-container ">
+			<div class="swiper-wrapper">
+				<!--第一个页面 page_01-->
+				<div class="swiper-slide cover">
+					<img class="pic" src="img/pic.png" />
+					<img class="logo ani" src="img/logo.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s" />
+					<img class="c_txt01 ani" src="img/c_txt01.png" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s" />
+					<img class="c_txt02 ani" src="img/c_txt02.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="2s" />
+				</div>
+				<!--第一个页面 page_01-->
+				<div class="swiper-slide page_01">
+					<img class="pic" src="img/pic.png" />
+					<img class="logo ani" src="img/logo.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s" />
+					<img class="p1_txt01 ani" src="img/p1_txt01.png" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.1s" />
+					<img class="p1_txt02 ani" src="img/p1_txt02.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.2s" swiper-animate-delay="0.6s" />
+				</div>
+
+				<!--第二个页面 page_02-->
+				<div class="swiper-slide page_02">
+					<img class="pic" src="img/pic.png" />
+					<img class="logo ani" src="img/logo.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s" />
+					<img class="p2_txt01 ani" src="img/p2_txt01.png" swiper-animate-effect="bounceIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s" />
+					<img class="p2_txt02 ani" src="img/p2_txt02.png" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s" />
+				</div>
+
+				<!--第三个页面 page_03-->
+				<div class="swiper-slide page_03">
+					<img class="pic" src="img/pic.png" />
+					<img class="logo ani" src="img/logo.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s" />
+					<div class="input_area ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.1s">
+						<img class="p3_inputBg" src="img/inputBg.png" />
+						<div class="input_content">
+							<input type="text" name="username" class="username" id="username" maxlength="6" value="" placeholder="请输入真实姓名" />
+							<input type="tel" name="usertel" class="usertel" id="usertel" maxlength="11" value="" placeholder="请输入正确的手机号码" />
+							<input type="tel" name="people_num" class="people_num" id="people_num" maxlength="2" value="" placeholder="请输入同行人数" />
+						</div>
+					</div>
+					<img class="p3_btn ani" src="img/btn_submit.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.2s" swiper-animate-delay="1s" />
+					<img class="p3_txt01 ani" src="img/p3_txt01.png" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="2s" />
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next swiper_btn_next flash"></div>
+			<!--<div class="swiper-button-prev swiper_btn_prev"></div>-->
+		</div>
+
+		<!--<script>document.addEventListener('touchmove', function(e){e.preventDefault()}, false);</script>-->
+		<audio src="img/bgm.mp3" class="mp3" autoplay="autoplay" loop="loop" id="audio_mp3"></audio>
+
+		<!--js-->
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://wx.whyimingkeji.com/zcivcase/webservices/js/yiming.weixin.share.2.0.1.js"></script>
+		<!--<script src="http://d.86jia.cn/hsjer/activity/webservices/zciv.weixin.share.1.0.1.js"></script>-->
+		<script type="text/javascript" src="js/swiper.animate.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/music.js"></script>
+		<script src="https://s5.cnzz.com/z_stat.php?id=1275605917&web_id=1275605917" language="JavaScript"></script>
+		<script type="text/javascript">
+			//swiper
+			var swiper = new Swiper('.swiper-container', {
+				spaceBetween: 0,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				direction: 'vertical',
+				onInit: function(swiper) {
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+				},
+				onSlideChangeEnd: function(swiper) {
+					swiperAnimate(swiper);
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				}
+			});
+		</script>
+		<script>
+			wx_share.config({
+				debug: false,
+				config_debug: false,
+				img: 'http://wx.whyimingkeji.com/wx/zxtfbjjrc/yaoqing012202/shaw.jpg',
+				url: 'http://wx.whyimingkeji.com/wx/zxtfbjjrc/yaoqing012202/index1.html',
+				title: '以心致谢,一路相伴',
+				desc: '中信泰富地产携手农行江岸支行贵宾客户联谊会',
+				success: function() {}
+			});
+		</script>
+		<script type="text/javascript">
+			//输入框失去焦点时
+			$('.page_03 input').bind('blur', function() {
+				$("body").scrollTop(0);
+			});
+		</script>
+	</body>
+
+</html>
